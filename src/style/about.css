@@ -1,0 +1,142 @@
+.about-image {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  border-spacing: 8px;
+  border-color: black;
+}
+.hero-desc1 {
+  display: flex;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.hero-desc2 {
+  display: none;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  font-weight: 400;
+  color: #eeeeee;
+}
+.about-logo {
+  font-size: 28px;
+  /* margin-top: -8px; */
+}
+
+.aboutIcons {
+  font-size: 30px;
+  display: flex;
+  gap: 8px;
+  width: 40%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.linkedinIcon {
+  background-color: #dc5f00;
+  color: black;
+}
+.githubIcon {
+  background-color: #dc5f00;
+  color: black;
+}
+.whatsappIcon {
+  background-color: #dc5f00;
+  color: black;
+}
+.vercelIcon {
+  background-color: #dc5f00;
+  color: black;
+}
+.facebookIcon {
+  background-color: #dc5f00;
+  color: black;
+}
+.vercelIcon:hover,
+.linkedinIcon:hover,
+.whatsappIcon:hover,
+.githubIcon:hover,
+.facebookIcon:hover {
+  background-color: #eeeeee;
+  color: black;
+}
+.aboutdiv-text {
+  width: 50%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+  .aboutIcons {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+  .aboutdiv-text {
+    width: 100%;
+    display: flex;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-image {
+    margin-top: -10px;
+    padding-top: 2px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .about-logo {
+    font-size: 25px;
+    margin-top: -30px;
+  }
+  .hero-desc1 {
+    display: none;
+  }
+  .hero-desc2 {
+    display: flex;
+    font-size: 17px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1023px) {
+  .about-image {
+    width: 250px; /* Full width for better responsiveness */
+    height: 250px; /* Maintain aspect ratio */
+    margin-left: 4px;
+     /* Center the image  */
+    display: block; /* Ensure proper rendering */
+    border-radius: 10px; /* Consistent with other styles */
+  }
+  .aboutdiv-text {
+    width: 45%; /* Reduce width to fit medium screens */
+    padding: 10px; /* Add spacing for better appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  .aboutIcons {
+    font-size: 25px; /* Adjust icon size for medium screens */
+    gap: 10px; /* Add spacing between icons */
+    margin-top: 20px; /* Adjust top margin */
+  }
+  .about-logo {
+    font-size: 26px; /* Adjust font size for medium screens */
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Add spacing below logo */
+  }
+  .hero-desc1 {
+    display: flex; /* Ensure description is visible */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center align text */
+    margin-top: 5px; /* Adjust margin */
+    text-align:justify;
+
+  }
+  .hero-desc2 {
+    display: none; /* Keep secondary description hidden for now */
+  }
+}

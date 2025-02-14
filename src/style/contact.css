@@ -1,0 +1,136 @@
+.main-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.combine-div {
+  width: 80%;
+  display: flex;
+  justify-content:space-evenly;
+  background: transparent;
+  height: 400px;
+  box-shadow: 1px 6px 10px gray;
+  border-radius: 15px;
+  gap:10px;
+  padding:20px 10px;
+}
+.map-container {
+  display:flex;
+  width:40%;
+  border-radius: 5px;
+  border:4px solid #dc5f00;
+  cursor: pointer;
+
+}
+.form-container {
+  width:40%;
+  display:flex;
+  padding:20px;
+}
+.form {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+  margin-top: 15px;
+
+  font-size: 20px;
+  border: none;
+  background-color: #686d76;
+  color: black;
+  border-radius: 10px;
+}
+input::placeholder {
+  color: rgb(61, 59, 59); /* Dark color for placeholder */
+  font-weight: bold; /* Optional: Make it bold */
+}
+.msg {
+  padding-bottom: 100px;
+}
+.btn-submit {
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  width:30%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #dc5f00;
+  color: black;
+  /* border:2px solid #EEEEEE; */
+  border-radius: 20px;
+  cursor:pointer;
+  padding-top: 10px;
+}
+.btn-submit:hover {
+  background-color:transparent;
+  color: #EEEEEE; 
+  border:2px solid #dc5f00;
+
+
+}
+.heading-contact {
+  padding-left: 10px;
+}
+@media screen and (max-width: 750px) {
+  .combine-div {
+    width: 80%; /* Adjust width for mobile */
+    height: auto; /* Automatic height */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align child elements */
+  }
+  .map-container {
+    width: 100%; /* Full width for mobile view */
+    height: auto; /* Let height adjust dynamically */
+    margin-bottom: 20px; /* Add spacing below the map */
+  }
+  .form-container {
+    width: 100%; /* Form takes full width */
+    margin-top: 0; /* Remove extra spacing above */
+  }
+  iframe {
+    width: 100%; /* Map iframe adjusts to full width */
+    height: 250px; /* Set appropriate height */
+    display: block; /* Ensure it renders as block element */
+  }
+  .btn-submit {
+    width: 50%; /* Button takes full width */
+    font-size: 18px; /* Adjust font size */
+  }
+  input {
+    font-size: 16px; /* Adjust input font size */
+    padding: 8px; /* Add suitable padding */
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1023px) {
+  .combine-div {
+    width: 80%; /* Full width for larger tablets */
+    height: auto; /* Auto height */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+  }
+  .map-container {
+    width: 80%; /* Map takes half the width */
+    height: auto; /* Auto height */
+    margin-bottom: 2px; /* Add spacing below */
+    background-color: blueviolet; /* Optional styling */
+  }
+  iframe {
+    width: 100%; /* Full width for iframe */
+    height: 250px; /* Fixed height */
+    display: block; /* Ensure block rendering */
+  }
+  .form-container {
+    width: 80%; /* Full width for the form */
+    margin-top: 0; /* Remove unnecessary margin */
+  }
+  .btn-submit {
+    width: 50%; /* Full width button */
+    font-size: 18px; /* Adjust font size */
+  }
+}

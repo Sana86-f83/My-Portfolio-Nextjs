@@ -1,0 +1,169 @@
+.main-project {
+  width: 100%;
+  height: 90%;
+  /* background-color:blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.project-container {
+  width: 80%;
+  height: 100%;
+  /* background-color:rgb(55, 58, 64); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 1px 6px 10px gray;
+  border-radius: 15px;
+}
+.boxes-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  margin-top: 20px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  /* outline: 2px solid #686d76; */
+  outline-offset: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  opacity: 80%;
+  position: relative;
+  overflow: hidden; /* Ensures the overlay stays within the box */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth fade-in */
+}
+
+.box:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.pro-link {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.project-image {
+  border-radius: 10px;
+}
+.box:hover {
+  opacity: 10px;
+}
+.top-div-project {
+  width: 50%;
+  /* background-color:green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-project {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.title-project:hover {
+  text-decoration: underline;
+  text-underline-offset: calc(6px);
+  color: #eeeeee;
+}
+.des-project {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #eeeeee;
+}
+@media screen and (min-width: 100px) and (max-width: 450px) {
+  .top-div-project {
+    width: 80%;
+  }
+  .boxes-cont {
+    width: 100%;
+
+  }
+  .box {
+    width:100%;
+    height:300px;
+
+  }
+  .project-image {
+    width: 300px;
+    height: 300px;
+  }
+  .title-project {
+    font-size: 25px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade-in */
+  }
+  .pro-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width:450px) and(max-width:850px){
+  .project-image {
+    width:400px;
+    height:auto;
+
+  }
+  .box {
+    width:100%;
+    height:auto;
+    background-color: rgb(130, 165, 42);
+
+  }
+  .boxes-cont {
+    width:80%;
+    height:auto;
+    background-color: rgb(130, 165, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+
+
+  }
+}

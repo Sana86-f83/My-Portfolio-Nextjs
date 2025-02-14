@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.header-rightdiv {
+  width: 40%;
+  padding: 12px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.header-links li {
+  list-style: none;
+}
+
+.navbar-li {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.active {
+  color: rgb(220, 95, 0);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.active:hover {
+  color: rgb(238, 238, 238);
+  text-decoration-line: underline;
+  text-underline-offset: calc(6px);
+  cursor: pointer;
+}
+
+.navbar-li:hover {
+  color: rgb(238, 238, 238);
+  text-underline-offset: calc(6px);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+h1 {
+  font-size: 40px;
+}
+
+.logo {
+  font-size: 40px;
+  color:#eeeeee;
+  font-weight: bold;
+  margin-left: 20px;
+  text-shadow: -4px 1px 1px #dc5f00;
+}
+
+.hambergerIcon {
+  display: none;
+
+}
+
+.logo:hover {
+  color: rgb(238, 238, 238);
+  text-decoration-line: underline;
+  text-underline-offset: calc(6px);
+  cursor: pointer;
+}
+
+.mobile-links {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 60px;
+  border: 2px solid rgb(220, 95, 0);
+  right: 20px;
+  background-color: #333; /* Background for mobile menu */
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.mobile-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-links ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.mobile-links ul li a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mobile-links ul li a:hover {
+  color: rgb(220, 95, 0);
+  text-decoration-line: underline;
+  text-underline-offset: calc(6px);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 100px) and (max-width: 750px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .header-rightdiv {
+    width: 100%;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .hambergerIcon {
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    cursor: pointer;
+    color: #dc5f00;
+
+
+
+  }
+
+  .mobile-links {
+    display: flex;
+  }
+}

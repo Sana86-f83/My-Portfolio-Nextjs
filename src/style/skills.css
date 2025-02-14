@@ -1,0 +1,134 @@
+/* Skills Section Styling */
+.skills-section {
+  text-align: center;
+  background: transparent;
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  margin-top: 80px;
+  border-radius: 10px;
+  box-shadow: 1px 6px 10px gray;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dc5f00;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+  height: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Skill Item */
+.skill {
+  text-align: center;
+}
+
+/* Circular Progress Bar */
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  background: conic-gradient(#ff6600 0%, #fff 100%);
+  transition: background 0.5s ease-in; /* Smooth transition */
+}
+
+.circle:hover {
+  animation: hover-effect 2s linear infinite; /* Animation on hover */
+}
+
+/* Hover Animation Keyframes */
+@keyframes hover-effect {
+  0% {
+    background: conic-gradient(#ff6600 0%, #fff 100%);
+  }
+  50% {
+    background: conic-gradient(#ff6600 50%, #fff 50%);
+  }
+  100% {
+    background: conic-gradient(#ff6600 100%, #fff 0%);
+  }
+}
+
+/* Inner Circle */
+.inner-circle {
+  width: 80%;
+  height: 80%;
+  background: #686d76;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black; /* Border to give separation effect */
+}
+
+.percentage {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Skill Name */
+.skill-name {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #eeeeee;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 750px) {
+  .skills-section {
+    width: 80%; /* Make section take up more width */
+    height:100%;; /* Adjust height automatically */
+
+  }
+
+  .skills-heading {
+    font-size: 25px; /* Smaller font for heading */
+    margin-top: -2px;
+    margin-bottom: 2px;;
+  }
+
+  .skills-container {
+    width:80%;
+    height:auto;
+    margin-top: 6px;;
+    display: flex;
+    margin:auto;
+    border:none;
+  }
+
+  .circle {
+    width: 100px; /* Smaller circle for smaller screens */
+    height: 100px;
+  }
+
+  .inner-circle {
+    width: 70%; /* Adjust inner circle size */
+    height: 70%;
+  }
+
+  .skill-name {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Reduce font size for skill name */
+  }
+
+  .percentage {
+    font-size: 20px; /* Adjust percentage font size */
+  }
+}

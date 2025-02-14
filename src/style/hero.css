@@ -1,0 +1,113 @@
+.hero-container {
+  width: 100%;
+  height: 400px;
+  /* background-color: rgb(237, 239, 238); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.hero-boxes-cont {
+  width: 80%;
+  height: 100%;
+  /* background-color:rgb(55, 58, 64); */
+  background: transparent;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 1px 6px 10px gray;
+}
+.rightdiv-text {
+  width: 50%;
+  /* justify-content: space-evenly; */
+}
+.hero-image {
+  width: 250px;
+  height: 300px;
+}
+.title-hero {
+  font-size: 30px;
+  line-height: 32px;
+}
+.hero-desc {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.hireMe {
+  padding: 10px 20px 10px 20px;
+  background-color: #dc5f00;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.my-resume {
+  padding: 10px 20px 10px 20px;
+  background-color: #686d76;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.hireMe:hover {
+  border: 2px solid #eeeeee;
+  background: transparent;
+  color: #eeeeee;
+}
+.my-resume:hover {
+  border: 2px solid #dc5f00;
+  background: transparent;
+  color: #eeeeee;
+}
+span {
+  color: #eeeeee;
+  text-shadow: -3px 2px 2px #dc5f00;
+}
+@media screen and (min-width: 100px) and (max-width: 750px) {
+  .hero-boxes-cont {
+    width: 80%;
+    height: 450px;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 150px;
+    margin-top: -20px;
+  }
+  .title-hero {
+    margin-top: -25px;
+    font-size: 27px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .rightdiv-text {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-desc {
+    margin-top: 6px;
+    padding: 6px;
+    font-size: 17px;
+  }
+  .my-resume,
+  .hireMe {
+    margin-top: 5px;
+    padding: 2px 6px;
+  }
+
+  span {
+    color: #eeeeee;
+    text-shadow: -3px 2px 2px #dc5f00;
+  }
+}
